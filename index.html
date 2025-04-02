@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="styles/style.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="background-image">ODIN</div>
+        <form class="personal-info-form" action="" method="post" novalidate>
+            <h3 id="form-message">
+                Check out our forum to get the latest news about technology and programming! Don't miss other people's tips and advices.
+                <br>
+                Sign up <em>now</em> to get started.
+            </h3>
+
+            <fieldset class="personal-info-fieldset">
+                <h3>Let's do this!</h3>
+
+                <div class="flex-input">
+                    <div class="personal-info-row">
+                        <div class="label-input">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="">
+                            <span class="error-message">&#9888; Please enter a valid name</span>
+                        </div>
+                        <div class="label-input">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="">
+                            <span class="error-message">&#9888; Please enter a valid name</span>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-info-row">
+                        <div class="label-input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required placeholder="">
+                            <span class="error-message">&#9888; Please enter a valid mail</span>
+                        </div>
+                        <div class="label-input">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="number" id="phone-number" name="phone-number" required placeholder="">
+                            <span class="error-message">&#9888; Please enter a valid phone number</span>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-info-row">
+                        <div class="label-input">
+                            <label for="user-password">PASSWORD</label>
+                            <input type="password" id="user-password" name="user-password" required placeholder="">
+                            <span class="error-message">&#9888; Please enter a valid password</span>
+                        </div>
+                        <div class="label-input">
+                            <label for="user-password-confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="user-password-confirm" name="user-password-confirm" required placeholder="">
+                            <span class="error-message">&#9888; Please enter a valid password</span>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="submition">
+                <button type="submit" class="submit-button">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
